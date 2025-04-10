@@ -1,0 +1,64 @@
+<script>
+
+let contadores = {
+         Contador1: 0,
+        Contador2: 0,
+        Contador3: 0
+};
+    function sumar(Contador) 
+    {
+        contadores[Contador]++;
+        document.getElementById(Contador).innerText = contadores[Contador];
+        
+    }
+
+
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina de Futbol</title>
+</head>
+<body>
+    <h1>Los mejores de la historia.</h1>
+
+        <p>El Diego</p>
+            <p>
+            Clubes:
+            Argentinos Jrs/
+            Boca juniors/
+            Barcelona/
+            Napoli/
+            Sevilla/
+            Newells Old
+        </p>
+        <img src="diego.jpg" alt="Maradona">
+        <p>Votos del Jugador <span id="Contador1"> 0 </span></p>
+        <button onclick=" sumar('Contador1')">+</button>
+
+        <p>Messi</p>
+        <p>Clubes:
+            Barcelona
+            Paris Saint Germain
+            Inter Miami
+        </p>
+        <img src="messi.jpg" alt="Messi">
+        <p>Votos del Jugador <span id="Contador2"> 0 </span></p>
+        <button onclick=" sumar('Contador2')">+</button>
+
+        <p>Neymar Jr.</p>
+        <p>Clubes:
+            Santos
+            Barcelona
+            Paris Saint Germain
+            Al Hillal
+        </p>
+        <img src ="ney.jpg" alt="Neymar Jr.">
+        <p>Votos del Jugador <span id="Contador3"> 0 </span></p>
+        <button onclick=" sumar('Contador3')">+</button>
+</body>
+<footer>
+    <h1>Burros del Futbol</h1>
+    <p>Bruno Sosa Villamon</p>
+</footer>
+</html>
